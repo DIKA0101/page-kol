@@ -2952,26 +2952,6 @@ a.disclaimer-style-referral {
   scale: 1.5;
   z-index: 5;
 }
-.how-work {
-  max-width: 550px;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-}
-
-.how-work-circle {
-  position: absolute;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #f1ac15; /* Circle color */
-  margin-right: 15px; /* Space between circle and image */
-}
-
 .vertical-line {
   position: absolute;
   top: 10px;
@@ -2982,19 +2962,189 @@ a.disclaimer-style-referral {
   z-index: -1;
 }
 
-.how-it-work-title {
-  color: #1e81d0;
-  font-weight: 700;
-  font-size: 24px;
+/* ?=============== Style untuk section skema klaim  ===============?*/
+
+/* !================ Style for how it work 2 =======================! */
+
+.how-it-work {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+.how-it-work:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
+}
+.how-it-work > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+.how-it-work > li .how-it-work-image {
+  padding: 1.5rem;
+}
+.how-it-work > li:after,
+.how-it-work > li:before {
+  display: table;
+  content: " ";
+}
+.how-it-work > li:after {
+  clear: both;
+}
+.how-it-work > li .how-it-work-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+.how-it-work > li .how-it-work-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+.how-it-work > li .how-it-work-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+.how-it-work > li .how-it-work-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #ffc800;
+}
+.how-it-work > li .how-it-work-image h4,
+.how-it-work > li .how-it-work-image .h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+.how-it-work > li.how-it-work-inverted > .how-it-work-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+.how-it-work > li.how-it-work-inverted > .how-it-work-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+.how-it-work > li.how-it-work-inverted > .how-it-work-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+.how-it-work > li:last-child {
+  margin-bottom: 0;
+}
+.how-it-work .how-it-work-heading h4,
+.how-it-work .how-it-work-heading .h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.how-it-work .how-it-work-heading h4.subheading,
+.how-it-work .how-it-work-heading .subheading.h4 {
+  text-transform: none;
+}
+.how-it-work .how-it-work-body > ul,
+.how-it-work .how-it-work-body > p {
+  margin-bottom: 0;
 }
 
-.how-work img {
-  margin-right: 15px;
+@media (min-width: 768px) {
+  .how-it-work:before {
+    left: 50%;
+  }
+  .how-it-work > li {
+    min-height: 100px;
+    margin-bottom: 100px;
+  }
+  .how-it-work > li .how-it-work-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .how-it-work > li .how-it-work-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+  .how-it-work > li .how-it-work-image h4,
+  .how-it-work > li .how-it-work-image .h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+  .how-it-work > li.how-it-work-inverted > .how-it-work-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .how-it-work > li {
+    min-height: 150px;
+  }
+  .how-it-work > li .how-it-work-panel {
+    padding: 0 20px 20px;
+  }
+  .how-it-work > li .how-it-work-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .how-it-work > li .how-it-work-image h4,
+  .how-it-work > li .how-it-work-image .h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  .how-it-work > li.how-it-work-inverted > .how-it-work-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .how-it-work > li {
+    min-height: 170px;
+  }
+  .how-it-work > li .how-it-work-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .how-it-work > li .how-it-work-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .how-it-work > li .how-it-work-image h4,
+  .how-it-work > li .how-it-work-image .h4 {
+    margin-top: 40px;
+  }
+  .how-it-work > li.how-it-work-inverted > .how-it-work-panel {
+    padding: 0 100px 20px 20px;
+  }
 }
 
-.how-work p {
-  font-size: 15px;
-}
+/* ?=============== End of Style untuk section skema klaim  ===============?*/
 
 .terms-conditions ul {
   padding-left: 0;
@@ -3091,8 +3241,11 @@ a.disclaimer-style-referral {
     flex-direction: column;
   }
   .partner-wrapper {
-    width: 168px;
-    height: 58px;
+    width: 112px;
+    height: 50px;
+  }
+  .how-it-work > li .how-it-work-image {
+    padding: 0.5rem;
   }
 }
 
@@ -3104,10 +3257,9 @@ a.disclaimer-style-referral {
     max-width: 100%;
   }
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1400px) {
   .device {
     margin: auto;
     scale: 1;
   }
 }
-
