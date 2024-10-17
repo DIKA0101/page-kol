@@ -3027,7 +3027,7 @@ a.disclaimer-style-referral {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
+  background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
 }
 .how-it-work > li .how-it-work-image h4,
 .how-it-work > li .how-it-work-image .h4 {
