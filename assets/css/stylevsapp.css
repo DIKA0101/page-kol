@@ -3265,7 +3265,9 @@ a.disclaimer-style-referral {
 }
 
 /* Style untuk smooth swiper */
-.swiper-wrapper {
+.smooth-swiper-container-top .swiper-wrapper,
+.smooth-swiper-container-middle .swiper-wrapper,
+.smooth-swiper-container-bottom .swiper-wrapper {
   background: #f8f8f8;
   transition: transform 0.5s linear;
   -webkit-transition: transform 0.5s linear;
