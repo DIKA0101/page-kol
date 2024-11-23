@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>KOL - Dialogika</title>
+    <meta content="Info Referral Dialogika" name="description" />
+    <meta
+      content="Info referral program, refer a friend, invite friend"
+      name="keywords"
+    />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.webp" rel="icon" />
+    <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon" />
+
+    <!-- OG Meta Tags to share -->
+    <meta property="og:site_name" content="Kelas Public Speaking" />
+    <meta property="og:site" content="www.dialogika.co" />
+    <meta property="og:title" content="Referral Program | Dialogika" />
+    <meta property="og:description" content="Referral Program Dialogika" />
+    <meta property="og:image" content="assets/img/hero-bg.webp" />
+    <meta property="og:url" content="www.dialogika.co/event" />
+    <meta property="og:type" content="page" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
+
+    <!-- Part CSS Files -->
+    <link href="assets/part/theme-counter/theme-counter.css" rel="stylesheet" />
+    <link href="assets/part/testimoni-insurin/testi.css" rel="stylesheet" />
+    <link href="assets/part/breadcrumbs-banner/banner.css" rel="stylesheet" />
+    <link href="assets/part/course-mentor/course.css" rel="stylesheet" />
+    <link href="assets/part/team-impact/team.css" rel="stylesheet" />
+    <link href="assets/part/schedule-event/schedule.css" rel="stylesheet" />
+    <link href="assets/part/contact-append/contact.css" rel="stylesheet" />
+    <link href="assets/part/popup-box/popup.css" rel="stylesheet" />
+    <link href="assets/part/video-sec/video.css" rel="stylesheet" />
+    <link href="assets/part/custom-files/style.css" rel="stylesheet" />
+
+    <link
+      href="assets/part/international-phone-number/intlTelInput.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/new.css" rel="stylesheet" />
+    <link href="assets/css/stylevsapp.css" rel="stylesheet" />
+
+    <!--  ========================================================  -->
+    <!-- Spreadsheet API Form Pendaftaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function HeroForm() {
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+          type: "post",
+          data: $("#heroForm").serializeArray(),
+          headers: {
+            accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+            secretKey: "68a998592183dc30cdc2b07576759f04",
+          },
+          success: function () {
+            alert("Anda Telah Mendaftar :)");
+          },
+          error: function () {
+            alert("There was an error :(");
+          },
+        });
+      }
+
+      function SubForm() {
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+          type: "post",
+          data: $("#myForm").serializeArray(),
+          headers: {
+            accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+            secretKey: "68a998592183dc30cdc2b07576759f04",
+          },
+          success: function () {
+            alert("Anda Telah Mendaftar :)");
+          },
+          error: function () {
+            alert("There was an error :(");
+          },
+        });
+      }
+
+      function Subcription() {
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/18511/",
+          type: "post",
+          data: $("#subcriptions").serializeArray(),
+          success: function () {
+            // $('#subcription-modal').modal('show');
+            // open("https://link.dialogika.co/open-whatsapp-group");
+            window.location.href =
+              "https://link.dialogika.co/open-whatsapp-group";
+          },
+          error: function () {
+            alert("There was an error :(");
+          },
+        });
+      }
+    </script>
+    <!-- End Spreadsheet API Form Pendaftaran -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "916674555903437");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Pixel Quora -->
+    <!-- DO NOT MODIFY -->
+    <!-- Quora Pixel Code (JS Helper) -->
+    <script>
+      !(function (q, e, v, n, t, s) {
+        if (q.qp) return;
+        n = q.qp = function () {
+          n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments);
+        };
+        n.queue = [];
+        t = document.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = document.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, "script", "https://a.quora.com/qevents.js");
+      qp("init", "cae6711903da464ab62f03df5f66aedc");
+      qp("track", "ViewContent");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1"
+    /></noscript>
+    <!-- End of Quora Pixel Code -->
+    <script>
+      qp("track", "GenerateLead");
+    </script>
+    <!-- End Pixel Quora -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-148836422-2");
+      gtag("config", "G-HV60XT856G");
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KGK9D6H");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Hotjar Tracking Code for https://dialogika.co -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2828594, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <!-- End Hotjar -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe> </noscript
+    ><!-- End Google Tag Manager (noscript) -->
+
+    <!-- ======= Top Bar, Header, Side Bar ======= -->
+    <main-header></main-header>
+    <!-- ======= Top Bar, Header, Side Bar ======= -->
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-end">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Intern</a></li>
+            <li><a href="index.html">Talent</a></li>
+            <li><a href="index.html">KOL</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- End Breadcrumbs Section -->
+
+    <!-- nav section start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text"> Navbar text with an inline element </span>
+        </div>
+      </div>
+    </nav>
+    <!-- nav section end -->
+
+    <!-- hero section start -->
+    <main id="main">
+      <section id="hero">
+        <div class="hero--skin-1 section--grey scrollto">
+          <div class="container container-fluid hero-container mx-auto p-5">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-md-6">
+                <div class="title-hero">
+                  <h1>OUR KOL PARTNER</h1>
+                  <h2>LET'S JOIN US !</h2>
+                </div>
+                <!-- button jooin our progran -->
+                <a
+                  href="#hero"
+                  class="appointment-btn"
+                  id="scroll-link"
+                  data-scroll-offset="100"
+                  >Join Our<span class="d-none d-md-inline"> Program</span></a
+                >
+              </div>
+              <div class="col-md-6">
+                <div class="image-hero">
+                  <img src="assets/img/kol-assets/people.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- start pagination -->
+            <div class="row">
+              <div class="col my-0">
+                <nav aria-label="...">
+                  <ul class="pagination mx-auto">
+                    <li class="page-item">
+                      <a class="page-link" href="#"></a>
+                    </li>
+                    <li class="page-item" aria-current="page">
+                      <a class="page-link" href="#"></a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"></a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"></a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"></a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mt-5 pt-3">
+                <div
+                  class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+                  bis_skin_checked="1"
+                >
+                  <span
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Go to slide 1"
+                    aria-current="true"
+                  ></span
+                  ><span
+                    class="swiper-pagination-bullet"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Go to slide 2"
+                  ></span
+                  ><span
+                    class="swiper-pagination-bullet"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Go to slide 3"
+                  ></span
+                  ><span
+                    class="swiper-pagination-bullet"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Go to slide 4"
+                  ></span
+                  ><span
+                    class="swiper-pagination-bullet"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Go to slide 5"
+                  ></span
+                  ><span
+                    class="swiper-pagination-bullet"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Go to slide 6"
+                  ></span
+                  ><span
+                    class="swiper-pagination-bullet"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Go to slide 7"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!-- end pagination -->
+
+            <!-- start searh bar -->
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="search-bar p-2">
+                  <input type="text" placeholder="seacrh....." />
+                  <button type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- End searh bar -->
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Hero -->
+
+      <!-- Start card -->
+      <section class="card-section container-fluid">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="card p-3 rounded-4">
+                <div class="card-profile mx-auto py-3 mt-1">
+                  <div class="bg-circle justify-content-center"></div>
+                  <img
+                    src="assets/img/kol-assets/subract.png"
+                    class="card-img-top"
+                    alt="subract"
+                  />
+                  <h5 class="card-title my-3"><a href="">@Amanda_</a></h5>
+                </div>
+                <div class="card-body mt-5">
+                  <div
+                    class="social-media d-flex m-0 justify-content-around align-content-center"
+                  >
+                    <div class="platform">
+                      <i class="bi bi-instagram"></i>
+                      <p>
+                        10k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-tiktok"></i>
+                      <p>
+                        100k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-twitter-x"></i>
+                      <p>
+                        15k <br />
+                        Follower
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End item card -->
+            <div class="col">
+              <div class="card p-3 rounded-4">
+                <div class="card-profile mx-auto py-3 mt-1">
+                  <div class="bg-circle justify-content-center"></div>
+                  <img
+                    src="assets/img/kol-assets/subract.png"
+                    class="card-img-top"
+                    alt="subract"
+                  />
+                  <h5 class="card-title my-3"><a href="">@Amanda_</a></h5>
+                </div>
+                <div class="card-body mt-5">
+                  <div
+                    class="social-media d-flex m-0 justify-content-around align-content-center"
+                  >
+                    <div class="platform">
+                      <i class="bi bi-instagram"></i>
+                      <p>
+                        10k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-tiktok"></i>
+                      <p>
+                        100k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-twitter-x"></i>
+                      <p>
+                        15k <br />
+                        Follower
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End item card -->
+            <div class="col">
+              <div class="card p-3 rounded-4">
+                <div class="card-profile mx-auto py-3 mt-1">
+                  <div class="bg-circle justify-content-center"></div>
+                  <img
+                    src="assets/img/kol-assets/subract.png"
+                    class="card-img-top"
+                    alt="subract"
+                  />
+                  <h5 class="card-title my-3"><a href="">@Amanda_</a></h5>
+                </div>
+                <div class="card-body mt-5">
+                  <div
+                    class="social-media d-flex m-0 justify-content-around align-content-center"
+                  >
+                    <div class="platform">
+                      <i class="bi bi-instagram"></i>
+                      <p>
+                        10k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-tiktok"></i>
+                      <p>
+                        100k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-twitter-x"></i>
+                      <p>
+                        15k <br />
+                        Follower
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End item card -->
+            <div class="col">
+              <div class="card p-3 rounded-4">
+                <div class="card-profile mx-auto py-3 mt-1">
+                  <div class="bg-circle justify-content-center"></div>
+                  <img
+                    src="assets/img/kol-assets/subract.png"
+                    class="card-img-top"
+                    alt="subract"
+                  />
+                  <h5 class="card-title my-3"><a href="">@Amanda_</a></h5>
+                </div>
+                <div class="card-body mt-5">
+                  <div
+                    class="social-media d-flex m-0 justify-content-around align-content-center"
+                  >
+                    <div class="platform">
+                      <i class="bi bi-instagram"></i>
+                      <p>
+                        10k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-tiktok"></i>
+                      <p>
+                        100k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-twitter-x"></i>
+                      <p>
+                        15k <br />
+                        Follower
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End item card -->
+            <div class="col">
+              <div class="card p-3 rounded-4">
+                <div class="card-profile mx-auto py-3 mt-1">
+                  <div class="bg-circle justify-content-center"></div>
+                  <img
+                    src="assets/img/kol-assets/subract.png"
+                    class="card-img-top"
+                    alt="subract"
+                  />
+                  <h5 class="card-title my-3"><a href="">@Amanda_</a></h5>
+                </div>
+                <div class="card-body mt-5">
+                  <div
+                    class="social-media d-flex m-0 justify-content-around align-content-center"
+                  >
+                    <div class="platform">
+                      <i class="bi bi-instagram"></i>
+                      <p>
+                        10k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-tiktok"></i>
+                      <p>
+                        100k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-twitter-x"></i>
+                      <p>
+                        15k <br />
+                        Follower
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End item card -->
+            <div class="col">
+              <div class="card p-3 rounded-4">
+                <div class="card-profile mx-auto py-3 mt-1">
+                  <div class="bg-circle justify-content-center"></div>
+                  <img
+                    src="assets/img/kol-assets/subract.png"
+                    class="card-img-top"
+                    alt="subract"
+                  />
+                  <h5 class="card-title my-3"><a href="">@Amanda_</a></h5>
+                </div>
+                <div class="card-body mt-5">
+                  <div
+                    class="social-media d-flex m-0 justify-content-around align-content-center"
+                  >
+                    <div class="platform">
+                      <i class="bi bi-instagram"></i>
+                      <p>
+                        10k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-tiktok"></i>
+                      <p>
+                        100k <br />
+                        Follower
+                      </p>
+                    </div>
+                    <div class="platform">
+                      <i class="bi bi-twitter-x"></i>
+                      <p>
+                        15k <br />
+                        Follower
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End item card -->
+          </div>
+          <div class="d-flex justify-content-center mt-5 mb-3">
+            <button class="btn-more" onclick="alert('Button clicked!')">
+              <img
+                src="assets/img/kol-assets/vector-btn.png"
+                alt="Button Image"
+              />
+              <span>More</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- End card -->
+
+      <section class="section" id="partner" style="background: #f8f8f8">
+        <!-- Start of Clients Section -->
+        <div class="container overflow-hidden" id="partners">
+          <div class="d-flex flex-lg-row flex-column align-items-center">
+            <div class="flex-grow-1 text-container m-auto col-lg-6 col-md-12">
+              <h2 class="section-title section-title-benefit w-100">
+                Partner Kami
+              </h2>
+              <p class="w-100 text-left fs-6">
+                Dialogika bermitra dengan universitas dan korporasi terkemuka
+                yang berfokus pada pengembangan keterampilan komunikasi. Mitra
+                resmi kami siap membantu kebutuhan pelatihan dan pengembangan
+                Anda.
+              </p>
+            </div>
+            <div
+              class="flex-grow-1 smooth-swiper-container m-auto col-lg-6 col-md-12"
+            >
+              <div
+                class="w-100 position-relative overflow-hidden py-3 smooth-swiper-container-top"
+              >
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/uad.png"
+                      class="rounded"
+                      alt="universitas Ahmad Dahlan logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/amikom.png"
+                      class="rounded"
+                      alt="Universitas Amikom Yogyakarta logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/gides.webp"
+                      class="rounded"
+                      alt="Gides Go Digital Desa logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/KusumaDentalCare.png"
+                      class="rounded"
+                      alt="Kusuma Dental Care logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/mercu.png"
+                      class="rounded"
+                      alt="Universitas Mercu Buana logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/KOSABANGSA.webp"
+                      class="rounded"
+                      alt="Kosabangsa logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-100 position-relative overflow-hidden py-3 smooth-swiper-container-middle"
+              >
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/avo.webp"
+                      class="rounded"
+                      alt="AVO Innovation & Technology logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/polita.png"
+                      class="rounded"
+                      alt="Politeknik Aisyiyah Pontianak logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/ruhui-rahayu.png"
+                      class="rounded"
+                      alt="Kabupaten Tapin Kalimantan Timur logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/aveon.png"
+                      class="rounded"
+                      alt="Aveon Hotel logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/UNM.webp"
+                      class="rounded"
+                      alt="Universitas Negeri Makassar"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/desa-matano.webp"
+                      class="rounded"
+                      alt="Desa Matano logo"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-images">
+                    <img
+                      src="assets/img/corporate/smk-dr-sutomo-temanggung.png"
+                      class="rounded"
+                      alt="SMK Dr Sutomo Temanggung logo"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="w-100 position-relative overflow-hidden py-3 smooth-swiper-container-bottom"
+                >
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide swiper-images">
+                      <img
+                        src="assets/img/corporate/uin-suka.png"
+                        class="rounded"
+                        alt="UIN Suka logo"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-images">
+                      <img
+                        src="assets/img/corporate/uii.png"
+                        class="rounded"
+                        alt="Universitas Islam Indonesia logo"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-images">
+                      <img
+                        src="assets/img/corporate/mnc.webp"
+                        class="rounded"
+                        alt="MNCTV logo"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-images">
+                      <img
+                        src="assets/img/corporate/kdi.webp"
+                        class="rounded"
+                        alt="Kontes Dangdut Indonesia logo"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-images">
+                      <img
+                        src="assets/img/corporate/ugm.png"
+                        class="rounded"
+                        alt="Universitas Gadjah Mada logo"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-images">
+                      <img
+                        src="assets/img/corporate/ui.png"
+                        class="rounded"
+                        alt="Universitas Indonesia logo"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper-images">
+                      <img
+                        src="assets/img/corporate/smartano.webp"
+                        class="rounded"
+                        alt="Smartano logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Clients Section -->
+      </section>
+    </main>
+    <!-- <section class="section align-items-center justify-content-center d-flex flex-column">
+
+		</section> -->
+
+    <!-- Section How it work -->
+    <!-- <section class="section" id='how-it-works'>
+			<div class="container">
+
+
+				<ul class="how-it-work">
+					<li>
+						<div class="how-it-work-image object-fit-cover overflow-hidden"><img class="img-fluid"
+								src="https://img.icons8.com/ios-filled/100/FFFFFF/card-in-use.png" alt="Validated" />
+						</div>
+						<div class="how-it-work-panel">
+							<div class="how-it-work-heading">
+								<h4 style="font-weight: 700; font-size: 24px;">Klien Membeli produk</h4>
+							</div>
+							<div class="how-it-work-body">
+								<p class="text-muted">Klien membeli produk dialogika menggunakan kode referral dari
+									partner dialogika</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="how-it-work-inverted">
+						<div class="how-it-work-image object-fit-cover overflow-hidden"><img class="img-fluid"
+								src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/100/FFFFFF/external-approved-checkmark-symbol-to-verify-the-result-basic-regular-tal-revivo.png"
+								alt="Validate" />
+						</div>
+						<div class="how-it-work-panel">
+							<div class="how-it-work-heading">
+								<h4 style="font-weight: 700; font-size: 24px;">Validasi</h4>
+							</div>
+							<div class="how-it-work-body">
+								<p class="text-muted">Pihak dialogika akan konfirmasi kepada partner terkait transaksi
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="how-it-work-image object-fit-cover overflow-hidden"><img class="img-fluid"
+								src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/150/FFFFFF/external-commission-digital-marketing-smashingstocks-mixed-smashing-stocks.png"
+								alt="Commision" />
+						</div>
+						<div class="how-it-work-panel">
+							<div class="how-it-work-heading">
+								<h4 style="font-weight: 700; font-size: 24px;">Terima Komisi</h4>
+							</div>
+							<div class="how-it-work-body">
+								<p class="text-muted">Komisi dapat diklaim dan akan dikirimkan setelah H+3 terjadinya
+									transaksi</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section> -->
+
+    <!-- End of Section -->
+    <!-- Section -->
+
+    <!-- ======= Footer & Counter Area ======= -->
+    <main-footer></main-footer>
+    <!-- ======= End Footer & Counter Area ======= -->
+
+    <a
+      href="#contact"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bx bxl-whatsapp bx-tada"></i
+    ></a>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal popup-box fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+        <div class="modal-content popup-box-content">
+          <div class="popup-card" style="width: 100%">
+            <button
+              type="button"
+              class="btn popup2-btn ms-auto"
+              data-bs-dismiss="modal"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img
+              src="assets/img/shape/popup.jpg"
+              class="card-img-top"
+              alt=""
+              style="
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border: 0px;
+              "
+            />
+            <div class="card-body popup-card-body">
+              <div class="popup-title-area">
+                <p class="popup-sub">Isikan Sekarang</p>
+                <h5 class="card-title popup-title">
+                  Form Pendaftaran Event Dialogika
+                </h5>
+              </div>
+              <a
+                href="#"
+                class="btn popup-play"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                ><i class="fa-solid fa-play"></i
+              ></a>
+            </div>
+            <form
+              action="javascript:void"
+              method="post"
+              id="heroForm"
+              enctype="text/plain"
+              class="popup-form"
+            >
+              <div class="row gy-3 mb-3">
+                <div class="col-lg-6">
+                  <label for="names" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    name="Name"
+                    class="form-control"
+                    id="names"
+                    pattern="[a-zA-Z\s]{3,100}"
+                    placeholder="Nama Lengkap*"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="locations" class="form-label">Domisili</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Location"
+                    id="locations"
+                    pattern="[a-zA-Z\s]{3,100}"
+                    placeholder="Domisili*"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="whatsapps" class="form-label">Whatsapp</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="Whatsapp"
+                    id="whatsapps"
+                    pattern="[0-9]{10,15}"
+                    placeholder="Whatsapp*"
+                    required=""
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="events" class="form-label">Event</label>
+                  <input
+                    type="text"
+                    name="Event"
+                    class="form-control"
+                    id="events"
+                    placeholder="Nama Event"
+                    disabled
+                  />
+                </div>
+                <select class="d-none" name="Timestamp">
+                  <option id="timestamp"></option>
+                </select>
+              </div>
+              <button
+                class="custom-btn2 send_contact"
+                id="submits"
+                onclick="HeroForm()"
+              >
+                Daftar Sekarang
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part -->
+    <script src="assets/part/newevent/script.js"></script>
+    <script src="assets/part/custom-files/typewriter.js"></script>
+
+    <script src="assets/part/custom-files/swiper-script.js"></script>
+
+    <script src="assets/part/international-phone-number/intlTelInput.min.js"></script>
+    <script src="assets/part/international-phone-number/script.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/clickup-task.js"></script>
+    <script src="assets/js/headerfooter.js"></script>
+    <script src="assets/js/timestamp.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/button-hover.js"></script>
+  </body>
+</html>

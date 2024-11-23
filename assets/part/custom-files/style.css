@@ -1,0 +1,247 @@
+.breadcrumbs {
+  background-color: white;
+  color: #0b2b6a;
+}
+
+#hero {
+  margin-top: 120px;
+  /* margin-bottom: 260px; */
+  height: 750px;
+}
+.hero-container {
+  color: white;
+  margin-top: 20px;
+  height: 400px;
+  max-width: 1055px;
+  background: rgb(41, 38, 84);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 38, 84, 1) 6%,
+    rgba(30, 130, 208, 1) 50%,
+    rgba(6, 39, 106, 1) 100%
+  );
+  border-radius: 45px;
+  /* position: relative; */
+}
+
+/* .hero-container .title-hero {
+  t;
+} */
+
+.hero-container .title-hero h1 {
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-container .title-hero h2 {
+  padding: 5px 0px;
+}
+.hero-container .image-hero {
+  margin-left: -90px;
+  padding-top: 40px;
+  /* max-width: 670px; */
+  /* marging-top:100px; */
+}
+
+.hero-container .image-hero img {
+  /* width: 100%; */
+  object-fit: cover;
+  max-width: 670px;
+
+  /* margin-top: -193px;
+  margin-left: 400px;
+   */
+}
+
+.hero-container .appointment-btn {
+  display: inline-block;
+  margin: 0;
+}
+
+/* pagination */
+.pagination {
+  /* gap:90px;
+  margin:10px auto; */
+  justify-content: space-around;
+  margin-top: 65px;
+}
+
+.pagination .page-item .page-link {
+  width: 61px;
+  height: 61px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+/* style seacrh-bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfbfb;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10x 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 20px;
+  width: 90%;
+  color: #7a7a7a;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+/* end style search bar */
+
+/* srart card section style*/
+.card{
+  box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.25);
+  width: 300px;
+  height: 350px;
+  margin-top: 48px;
+  
+}
+
+.card-section .container {
+  border-radius: 45px;
+  background-color: #F4F2F2;
+}
+.card-profile {
+  width: 150px;
+  height: 150px;
+}
+
+.card-profile .bg-circle{
+  width: 100px;
+  height: 90px;
+  background-color: #1354A3;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* -webkit-transform: translateX(-50%); */
+  /* -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%); */
+}
+.card-profile img{
+  /*position: relative;
+  */width: 95px;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.social-media .platform{
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 14px;
+  line-height: 30px;
+}
+.social-media .platform i{
+color: #0b2b6a;
+font-size: 30px;
+}
+
+.card-title{
+  text-align: center;
+}
+
+/* btn more */
+.btn-more {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-more img {
+  display: block;
+}
+
+.btn-more span {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #eaeaea;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+/* end btn more */
+
+
+
+
+
+
+
+
+
+
+
+/* end card section style*/
+@media (max-width: 768px) {
+  .hero-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .hero-container .title-hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-container .title-hero h2 {
+    font-size: 24px;
+  }
+
+  .hero-container .image-hero img {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .hero-container .appointment-btn {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  /* Pengaturan untuk pagination */
+  .pagination {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pagination .page-item .page-link {
+    width: 45px;
+    height: 45px;
+  }
+}

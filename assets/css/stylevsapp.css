@@ -95,16 +95,8 @@ body {
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-main,
-menu,
-nav,
-section,
-summary {
+
+section {
   /* 1 */
   display: block;
 }
