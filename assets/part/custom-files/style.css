@@ -5,10 +5,9 @@
 
 #hero {
   margin-top: 120px;
-  /* margin-bottom: 260px; */
+  margin-bottom: 60px;
   /* height: 750px; */
   height: auto;
-  margin-bottom: 0;
 }
 .hero-container {
   color: white;
@@ -53,26 +52,23 @@
   padding: 5px 10px;
   text-align: center;
 }
-.hero-container .image-hero {
-  margin-left: -110px;
-  margin-top: 34px;
-  /* max-width: 670px; */
-  /* marging-top:100px; */
-}
+
 
 .hero-container .image-hero img {
-  /* width: 100%; */
-  /* object-fit: cover; */
   max-width: 700px;
-
-  /* margin-top: -193px;
-  margin-left: 400px;
-   */
 }
 
 .hero-container .appointment-btn {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-md-inline {
+  display: inline;
 }
 
 /* pagination */
@@ -218,16 +214,42 @@
 /* end btn more */
 
 /* end card section style*/
+
+@media screen and (min-width:992px) {
+  .hero-container {
+    max-width: 90%;
+    margin-inline: auto;
+    position: relative;
+
+  } 
+  .hero-container .image-hero {
+    margin-inline: center;
+    margin-left: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-90%);
+    width: 100%;
+    -webkit-transform: translateX(-90%);
+    -moz-transform: translateX(-90%);
+    -ms-transform: translateX(-90%);
+    -o-transform: translateX(-90%);
+}
+
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .hero-container {
-    width: 90%;
+    width: 80%;
     margin-inline: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     height: 550px;
     padding: 20px;
     border-radius: 45px;
     text-align: center;
     position: relative;
+    overflow: hidden;
+  
   }
   .hero-container .title-hero {
     margin-top: 30px;
@@ -244,30 +266,19 @@
     width: 100%;
   }
   .hero-container .image-hero img {
-    margin-top: 7px;
-    width: auto;
-  }
-  /* .hero-container .title-hero h1 {
-    font-size: 32px;
+    margin-top: 15%;
+    max-width: 700px;
   }
 
-  .hero-container .title-hero h2 {
-    font-size: 24px;
-  }
-
-  .hero-container .image-hero img {
-    width: 100%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .hero-container .appointment-btn {
-    display: block;
-    margin: 20px auto;
+  .btn-join a{
+    height: 35px;
+    width: 120px;
+    line-height:25px;
+    font-size: 12px;
+    padding: 5px 10px;
     text-align: center;
   }
-
-  /* Pengaturan untuk pagination */
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -279,11 +290,11 @@
     margin-bottom: 0;
   }
   .hero-container {
-    color: white;
+    color: black;
     margin-top: 20px;
     /* height: 450px; */
     max-width: 300px;
-    max-height: 300px;
+    height: 300px;
     background: rgb(41, 38, 84);
     background: linear-gradient(
       0deg,
@@ -291,6 +302,7 @@
       rgba(30, 130, 208, 1) 50%,
       rgba(6, 39, 106, 1) 100%
     );
+    position: relative;
     border-radius: 45px;
     /*position: relative;
      */
@@ -298,31 +310,51 @@
     -moz-border-radius: 45px;
     -ms-border-radius: 45px;
     -o-border-radius: 45px;
+
   }
+
   .hero-container .image-hero {
     max-width: 400px;
-    margin: 30px auto;
+    margin: auto;
     margin-left: 10px;
-    /* margin-top: 34px; */
-    /* max-width: 670px; */
-    /* marging-top:100px; */
+
   }
 
   .hero-container .image-hero img {
-    /* width: 100%; */
-    /* object-fit: cover; */
-    max-width:310px;
-
-    /* margin-top: -193px;
-    margin-left: 400px;
-     */
+    max-width: 290px;
   }
 
   .img-dua {
     position: absolute;
-    top: 150px;
+    top: 154px;
     left: 60%;
     transform: translate(-50%, -50%);
-    height: auto; 
-  }
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.title-hero{
+  font-family: 'Poppins';
+  font-size: 1rem;
+  color: black;
+}
+
+.title-hero h1,h2{
+  font-weight: 800;
+}
+
+.btn-join{
+  max-width: 500px;
+}
+.btn-join a{
+  height: 40px;
+  width: 150px;
+  line-height:25px;
+  font-size: 12px;
+  padding: 5px 10px;
+  text-align: center;
+}
 }
